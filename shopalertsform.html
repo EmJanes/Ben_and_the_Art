@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Shop Updates</title>
+        <!--
+            Ben and the Art of Home Maintenance
+            Filename: shopupdatesform.html
+            Author: Emily Stevens
+            Date: October, 2021
+            HTML5 and CSS3 Illustrated Course Final Project
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="background" href="images/background.png">
+        <link rel="icon" sizes="192px x 192px" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <p class="skip"><a href="#contentstart">Skip Navigation</a></p>
+            <header>
+                <h1 class="logotitle"><a href="index.html"><img src="images/logo_w_title.png" width="770" height="175" alt="Ben and the Art of Home Maintenance"></a></h1>
+                <h2>Refurbish   ------   Demolish  ------  Construct</h2>
+            </header>
+            <nav class="site_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        <article>
+            <div class="container">
+                <p id="contentstart" class="signup">Sign-Up for Shop Updates</p>
+
+                <form action="shopalertsformresults.html">
+                <div class="newreleasesection">  
+                    <fieldset>
+                        <fieldset>
+                        <legend id="shopalerts" class="newreleaseemails">New Items Releases</legend>
+                        <div class="newreleaseoptions">
+                            <legend>The Shirts</legend>
+                            <div class="checkbox">
+                                <input type="checkbox" id="classic" value="The Classic Tee" name="classic">
+                                <label for="classic">Classic</label>
+                                <input type="checkbox" id="longsleeve" value=" The Longsleeve Tee" name="longsleeve">
+                                <label for="longsleeve">Longsleeve</label>
+                                <input type="checkbox" id="hoodie" value="The Hoodie" name="hoodie">
+                                <label for="hoodie">Hoodie</label>
+                            </div>
+                            <legend>The Hats</legend>
+                            <div class="checkbox">
+                                <input type="checkbox" id="ballcap" value="The Ballcap" name="ballcap">
+                                <label for="ballcap">Ballcap</label>
+                                <input type="checkbox" id="beanie" value="The Beanie" name="beanie">
+                                <label for="beanie">Beanie</label>
+                            </div>
+                            <legend>The Others:</legend>
+                            <div class="checkbox">
+                                <input type="checkbox" id="stickers" value="Stickers" name="stickers">
+                                <label for="stickers">Stickers</label>
+                            </div> 
+                        </div>
+                        </fieldset>
+                    </fieldset>
+                </div>  
+                <fieldset class="restocksection">
+                    <fieldset>
+                    <legend id="shopalerts" class="restockedemails">Restocked Colors &#38 Sizes</legend>
+                    <div class="shirts">
+                        <p>The Shirts</p>
+                        <div class="restockselection">  
+                            <label for="classicrestock">Classic: </label>
+                            <select id="classicrestock" name="classicsize">
+                                <option value="selectsize">Size</option>
+                                <option value="kids">Kids</option>
+                                <option value="xs">Extra-Small</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">Extra Large</option>
+                                <option value="2xl">2X Large</option>
+                            </select>
+                            <select id="classicrestock" name="classiccolor">
+                                <option value="select">Color</option>
+                                <option value="black">Black</option>
+                                <option value="gray">Gray</option>
+                                <option value="burnt orange">Burnt Orange</option>
+                            </select>
+                            <br>
+                            <label for="longsleeverestock">Longsleeve: </label>
+                            <select id="longsleeverestock" name="longsleevesize">
+                                <option value="selectsize">Size</option>
+                                <option value="kids">Kids</option>
+                                <option value="xs">Extra-Small</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">Extra Large</option>
+                                <option value="2xl">2X Large</option>
+                            </select>
+                            <select id="longsleeverestock" name="longsleevecolor">
+                                <option value="select">Color</option>
+                                <option value="black">Black</option>
+                                <option value="gray">Gray</option>
+                                <option value="burnt orange">Burnt Orange</option>
+                            </select>
+                            <br>
+                            <label for="hoodierestock">
+                                Hoodie: </label>
+                            <select id="hoodierestock" name="hoodiesize">
+                                <option value="selectsize">Size</option>
+                                <option value="kids">Kids</option>
+                                <option value="xs">Extra-Small</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">Extra Large</option>
+                                <option value="2xl">2X Large</option>
+                            </select>
+                            <select id="hoodierestock" name="hoodiecolor">
+                                <option value="select">Color</option>
+                                <option value="black">Black</option>
+                                <option value="gray">Gray</option>
+                                <option value="burnt orange">Burnt Orange</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="headgear">
+                        <p>The Headgear</p>
+                        <div class="restockselection">
+                            <label for="beanierestock">Beanie: </label>
+                            <select name="beaniesize" id="beanierestock">
+                                <option value="select">Select Size</option>
+                                <option value="kids">Kids</option>
+                                <option value="adults">Adults</option>
+                            </select>
+                            <select name="beaniecolor" id="beanierestock">
+                                <option value="select">Color</option>
+                                <option value="black">Black</option>
+                                <option value="gray">Gray</option>
+                                <option value="burnt orange">Burnt Orange</option>
+                            </select>
+                            <br>
+                            <label for="ballcaprestock">Ballcap: </label>
+                            <select id="ballcaprestock" name="ballcapsize">
+                                <option value="select">Size</option>
+                                <option value="littleben">"The Little Ben"</option>
+                                <option value="regular">Regular</option>
+                                <option value="bigheaded"> "The Big Ben"</option>
+                            </select>
+                            <select id="ballcaprestock" name="ballcapcolor">
+                                <option value="select">Color</option>
+                                <option value="black">Black</option>
+                                <option value="gray">Gray</option>
+                                <option value="burnt orange">Burnt Orange</option>
+                            </select>
+                        </div>
+                    </div>
+                        </fieldset>
+                    </fieldset>
+                <fieldset class="psasection">
+                    <fieldset>
+                    <legend class="PSA">PSA <span class="psaregarding">(regarding ballcap sizes)</span></legend>
+                        <p class="psatext">To the big headed men lookin' for a work hat. We've got hats to fit you too! Check out "The Big Ben" size. It's a perfect for big headed men that struggle finding hats that fit, just like Ben does. ("The Little Ben" is also available for the "mini-me" DIY'er of your household.)</p>
+                    </fieldset>
+                </fieldset>
+                        <fieldset class="shoppercontactinfo">
+                        <legend>Your Contact Information</legend>
+                            <label for="last,firstname">Name:</label>
+                            <input type="text" name="last,firstname" id="last,firstname" placeholder="Last name, First name">
+                            <br>
+                            <label for="notificationsemail">Email:</label>
+                            <input type="email" name="notificationsemail" id="notificationsemail" placeholder="emailaddress@example.com"> 
+                        </Fieldset> 
+                        <fieldset class="submitbutton">
+                            <input type="submit" id="submit" value="SUBMIT">
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </div>
+        </article>
+        <footer>
+            <p class="emailus">EMAIL US!</p>
+            <p>We welcome all ideas, inspo, insight, and feedback that contributes to the enhancement of DIO (Doing It Ourselves)!</p>
+            <p class="email"><a href="mailto:latimerenterprisesllc@gmail.com">latimerenterprisesllc@gmail.com</a></p>
+        </footer>
+        <div>
+            <p class="followus">FOLLOW OUR SOCIAL MEDIA:</p>
+            <p>
+                <!--<a href="#" class="fa fa-instagram" id="instagram"></a>
+                <a href="#" class="fa fa-youtube" id="youtube"></a>-->
+                <form action="https://www.facebook.com/pages/category/Tools-Equipment/Latimer-Enterprises-LLC-101282528923535/" class="socialmedia">    
+                    <button type="submit" href="#" class="fa fa-facebook" id="facebook">
+                    </button>
+                </form>
+            </p>
+        </div>
+     </body>
+  </html>

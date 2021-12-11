@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Sign-Up Results</title>
+        <!--
+            Ben and the Art of Home Maintenance
+            Filename: contactformresults.html
+            Author: Emily Stevens
+            Date: October, 2021
+            HTML5 and CSS3 Illustrated Course Final Project
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="background" href="images/background.png">
+        <link rel="icon" sizes="192px x 192px" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <p class="skip"><a href="#contentstart">Skip Navigation</a></p>
+            <header>
+                <h1 class="logotitle"><a href="index.html"><img src="images/logo_w_title.png" width="770" height="175" alt="Ben and the Art of Home Maintenance"></a></h1>
+                <h2>Refurbish   ------   Demolish  ------  Construct</h2>
+            </header>
+            <nav class="site_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        <article>
+            <div class="container">
+                <p class="success" id="contentstart">Your submission was successful!</p>
+                <div class="signupresults">
+                    <p class="check">Double check the information received is correct:</p>
+                    <script>
+                        var formData = location.search;
+                        formData = formData.substring(1, formData.length);
+                        while (formData.indexOf("+") !== -1) {
+                            formData = formData.replace("+", " ");
+                        }
+                        formData = decodeURIComponent(formData);
+                        var formArray = formData.split("&");
+                        for (var i = 0; i < formArray.length; i = i + 1) {
+                            document.write("<p>" + formArray[i] + "</p>");
+                        }
+                    </script>
+                </div>
+                <div class="loop-thanks">
+                    <p>We'll keep you in the loop via email.</p>
+                    <p>Thank you for your support!</p>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <p class="emailus">EMAIL US!</p>
+            <p>We welcome all ideas, inspo, insight, and feedback that contributes to the enhancement of DIO (Doing It Ourselves)!</p>
+            <p class="email"><a href="mailto:latimerenterprisesllc@gmail.com">latimerenterprisesllc@gmail.com</a></p>
+            <p class="socialmedia">Follow on Instagram for projects currently in the works, and additional content (bloopers) on our progress that might not make the blog!</p>
+        </footer>
+     </body>
+  </html>
